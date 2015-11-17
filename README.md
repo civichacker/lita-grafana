@@ -12,7 +12,9 @@ gem "lita-grafana"
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+### Required
+
+* `url` (String) – The location of the running grafana instance.
 
 ## Usage
 
