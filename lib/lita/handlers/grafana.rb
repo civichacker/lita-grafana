@@ -9,14 +9,15 @@ module Lita
       #config :s3_prefix, required: true
 
 
-  route /^graf list$/i, :grafana, command: false, help: {
-    'graf list' => 'hello world'
-  }
+      route /^graf list$/i, :grafana, command: false, help: {
+        'graf list' => 'hello world'
+      }
 
   def grafana(msg)
-    msg.reply("hello grafana") 
+    msg.reply("hello grafana")
   end
-  
+
+
 
       Lita.register_handler(self)
     end
