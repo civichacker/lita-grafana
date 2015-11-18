@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-grafana"
   spec.version       = "0.1.0"
-  spec.authors       = ["Ayumi Fukuda Bennett"]
-  spec.email         = ["ayumi.fukuda@gmail.com"]
-  spec.description   = "TODO: Add a description"
+  spec.authors       = ["Sophicware"]
+  spec.email         = ["jurnell@sophicware.com"]
+  spec.description   = "toDO: Add a description"
   spec.summary       = "TODO: Add a summary"
   spec.homepage      = "TODO: Add a homepage"
   spec.license       = "TODO: Add a license"
