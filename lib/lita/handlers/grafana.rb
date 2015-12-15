@@ -15,14 +15,18 @@ module Lita
       }
 
   def grafana(msg)
-    msg.reply("hello grafana")
+    response = http.get('https://google.com') do |request|
+      request.headers['Accept'] = 'application/json'
+      request.headers['Authorization'] = "Bearer #{config.api_token}"
+    end
+    msg.reply response.body
   end
 
       route /^graf db (.*)$/i, :grafana, command: false, help: {
         'graf db graphite-carbon-metrics' => 'hello cats'
       }
 
-      route /^graf search (.*)$/i, :grafana, command: false, help: {
+      route /^graf search\s?(.*)$/i, :grafana, command: false, help: {
         'graf search cats' => 'you found it'
       }
 
